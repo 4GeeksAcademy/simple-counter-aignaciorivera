@@ -6,7 +6,16 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import Timer from "./component/Timer.jsx";
+ 
+let setCounter = 0
+function counterRender ( ) {
+setCounter = setCounter + 1
+    ReactDOM.render(<Timer seconds={setCounter}/>, document.querySelector("#app"));
+
+}
+
+setInterval(counterRender, 1000) 
+    
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));

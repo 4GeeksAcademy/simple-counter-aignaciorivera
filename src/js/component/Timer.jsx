@@ -11,7 +11,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 	const timer = (props) => {
 		return <>
-		<div className="d-flex bg-dark justify-content-center">
+		<div className="d-flex justify-content-center">
 		<Cards icon />
 		<Cards num={Math.floor((props.seconds % 1000000) / 100000)} />
 		<Cards num={Math.floor((props.seconds % 100000) / 10000)} />

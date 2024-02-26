@@ -6,7 +6,7 @@ import { faClock } from '@fortawesome/free-solid-svg-icons'
 
 const Cards = (props) => {
         return <> 
-    <div class="card fw-white">
+    <div class="card bg-dark text-white">
     <div class="card-body">
         <h1>{props.icon ? <FontAwesomeIcon icon={faClock} /> : props.num}</h1>
     </div>
